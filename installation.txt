@@ -21,10 +21,28 @@ sonar-scanner \
 #SCA- software composition analysis 
 1. python3 -m venv .venv
 2.source .venv/bin/activate
+3.pip install pip-audit
+4. pip audit -r requirements.txt
 
 
+#DAST checking vulnerablity using OWASP ZAPdocker run -d \
+  1. --name juice-shop \
+    -p 3000:3000 \
+     bkimminich/juice-shop 
+         #juice-an-freesource-application-in github
 
+    2.docker run --rm \                                                                                      ✔  8509  15:33:58
+        -v "$(pwd):/zap/wrk" \
+         -t ghcr.io/zaproxy/zaproxy:stable \
+         zap-baseline.py \
+        -t http://host.docker.internal:3000 \
+        -r zap-report.html
+     3.  docker run -it \                                                                             SIGINT(2) ↵  8509  15:36:05
+        -p 8080:8080 \
+         ghcr.io/zaproxy/zaproxy:stable \
+         zap-webswing.sh
 
+         
 
 #installation gudie for sonarQube
 
