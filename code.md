@@ -66,3 +66,5 @@ sudo chmod -R 755 /opt/sonarqube
 sudo systemctl daemon-reload
 sudo systemctl start sonarqube
 sudo systemctl enable sonarqube
+
+

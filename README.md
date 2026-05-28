@@ -252,6 +252,12 @@ https://docs.sonarsource.com/sonarqube-server/10.8/analyzing-source-code/scanner
 ### Run Scan
 ```bash
 sonar-scanner -Dsonar.host.url=http://localhost:9000 -Dsonar.login=<TOKEN>
+
+sonar-scanner \
+  -Dsonar.projectKey=my-project \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://3.237.186.186:9000 \
+  -Dsonar.token=<token>
 ```
 
 ### Expected Findings

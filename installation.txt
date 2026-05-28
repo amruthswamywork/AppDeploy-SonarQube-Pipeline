@@ -1,3 +1,30 @@
+#code used in entire runnig the app
+
+1. install apt docker.io
+2. sudo systemctl enable docker
+3. sudo systemctl start docker
+4.docker run -d -p 9000:9000 --name sonarqube sonarqube:9.9-community 
+5.http://<ip-address>:9000 (view this in to view code )
+6.user: admin
+7.passwd:  admin
+8. then downlode sonarscanner then run below command 
+
+sonar-scanner \
+  -Dsonar.projectKey=my-project \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://3.237.186.186:9000 \
+  -Dsonar.token=<token>
+```
+
+8. all the above will be used to check the SAST security
+
+#SCA- software composition analysis 
+1. python3 -m venv .venv
+2.source .venv/bin/activate
+
+
+
+
 
 #installation gudie for sonarQube
 
@@ -69,3 +96,5 @@ sudo chmod -R 755 /opt/sonarqube
 sudo systemctl daemon-reload
 sudo systemctl start sonarqube
 sudo systemctl enable sonarqube
+
+
