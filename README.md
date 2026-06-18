@@ -1,5 +1,5 @@
 # AppDeploy-SonarQube-Pipeline
-etailed Project Overview (README/GitHub About)
+Detailed Project Overview (README/GitHub About)
 
 AppDeploy-SonarQube-Pipeline is a hands-on DevOps project focused on integrating code quality validation into the software delivery lifecycle. The project deploys a sample application while leveraging SonarQube for continuous code inspection, bug detection, code smell identification, security vulnerability scanning, and quality gate validation.
 
